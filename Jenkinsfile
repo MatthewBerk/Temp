@@ -1,7 +1,7 @@
 pipeline {
-    agent { docker { image 'maven:3.5.2-openjdk-11-slim' } }
+    agent any
     stages {
-        stage('build') {
+        stage('Build') {
             steps {
                 bat 'mvn --version'
             }
